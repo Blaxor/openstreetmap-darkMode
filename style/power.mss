@@ -1,4 +1,5 @@
-@power-line-color: #888;
+/* Dark mode power line color */
+@power-line-color: #555;
 
 #power-line {
   [zoom >= 14] {

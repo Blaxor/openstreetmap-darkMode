@@ -1,4 +1,5 @@
-@ferry-route: #66f;
+/* Dark mode ferry route colors */
+@ferry-route: #5580c0;
 @ferry-route-text: @ferry-route;
 
 #ferry-routes {

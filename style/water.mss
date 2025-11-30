@@ -1,6 +1,7 @@
-@water-text: #4d80b3;
-@glacier: #ddecec;
-@glacier-line: #9cf;
+/* Dark mode water colors */
+@water-text: #6090c0;
+@glacier: #1a2525;
+@glacier-line: #2a4050;
 
 @waterway-text-repeat-distance: 200;
 

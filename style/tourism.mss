@@ -1,7 +1,7 @@
-/* For tourism features like roller coasters */
+/* For tourism features like roller coasters - Dark mode */
 
-@roller-coaster-casing: #707070;
-@roller-coaster-fill: #ddd;
+@roller-coaster-casing: #505050;
+@roller-coaster-fill: #707070;
 
 /* The purpose of “roller-coaster-gap-fill” layer is to fill in the gaps between sections of roller coaster track. */
 #roller-coaster-gap-fill[zoom >= 15] {
