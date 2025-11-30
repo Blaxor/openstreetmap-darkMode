@@ -1,42 +1,43 @@
 /* For the main linear features, such as roads and railways. */
 
-/* Dark mode road colors - high contrast against dark background */
-@tertiary-fill: #4a4a4a;
-@residential-fill: #3a3a3a;
+/* Dark mode road colors - improved visibility for driver navigation */
+/* Increased brightness on minor roads for better contrast against dark background */
+@tertiary-fill: #606060;
+@residential-fill: #555555;
 @service-fill: @residential-fill;
-@living-street-fill: #333333;
-@pedestrian-fill: #404050;
-@raceway-fill: #5a2a3a;
-@road-fill: #444;
-@footway-fill: #8b5a5a;
-@footway-fill-noaccess: #555555;
+@living-street-fill: #4a4a4a;
+@pedestrian-fill: #505060;
+@raceway-fill: #6a3a4a;
+@road-fill: #5a5a5a;
+@footway-fill: #9b6a6a;
+@footway-fill-noaccess: #666666;
 @steps-fill: @footway-fill;
-@steps-fill-noaccess: #555555;
-@cycleway-fill: #3a5a8a;
-@cycleway-fill-noaccess: #4a4a6a;
-@bridleway-fill: #3a5a3a;
-@bridleway-fill-noaccess: #4a5a4a;
-@track-fill: #5a4a2a;
-@track-fill-noaccess: #4a4030;
-@platform-fill: #444444;
-@aeroway-fill: #3a3a44;
+@steps-fill-noaccess: #666666;
+@cycleway-fill: #4a6a9a;
+@cycleway-fill-noaccess: #5a5a7a;
+@bridleway-fill: #4a6a4a;
+@bridleway-fill-noaccess: #5a6a5a;
+@track-fill: #6a5a3a;
+@track-fill-noaccess: #5a5040;
+@platform-fill: #555555;
+@aeroway-fill: #4a4a54;
 @runway-fill: @aeroway-fill;
 @taxiway-fill: @aeroway-fill;
 @helipad-fill: @aeroway-fill;
-@access-marking: #333333;
+@access-marking: #444444;
 /* access-marking-light is used on some darker highways for better contrast */
-@access-marking-light: #2a2a2a;
-@access-marking-secondary: #353535;
-@access-marking-white-unpaved: #383838;
-@access-marking-living-street: #404040;
+@access-marking-light: #3a3a3a;
+@access-marking-secondary: #454545;
+@access-marking-white-unpaved: #484848;
+@access-marking-living-street: #505050;
 
-@default-casing: #0a0a0a;
-@tertiary-casing: #5a5a5a;
-@residential-casing: #4a4a4a;
+@default-casing: #1a1a1a;
+@tertiary-casing: #6a6a6a;
+@residential-casing: #5a5a5a;
 @road-casing: @residential-casing;
 @service-casing: @residential-casing;
 @living-street-casing: @residential-casing;
-@pedestrian-casing: #555555;
+@pedestrian-casing: #656565;
 @path-casing: @default-casing;
 @footway-casing: @default-casing;
 @steps-casing: @default-casing;
