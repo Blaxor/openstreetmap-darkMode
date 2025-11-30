@@ -58,16 +58,17 @@
 @tunnel-casing: #2a2a2a;
 @bridge-casing: #1a1a1a;
 
-@motorway-tunnel-fill: darken(@motorway-fill, 10%);
-@trunk-tunnel-fill: darken(@trunk-fill, 10%);
-@primary-tunnel-fill: darken(@primary-fill, 10%);
-@secondary-tunnel-fill: darken(@secondary-fill, 5%);
-@tertiary-tunnel-fill: darken(@tertiary-fill, 5%);
-@residential-tunnel-fill: darken(@residential-fill, 5%);
-@living-street-tunnel-fill: darken(@living-street-fill, 3%);
+/* Dark mode: lighten tunnel fills to make them visible but muted */
+@motorway-tunnel-fill: lighten(@motorway-fill, 10%);
+@trunk-tunnel-fill: lighten(@trunk-fill, 10%);
+@primary-tunnel-fill: lighten(@primary-fill, 10%);
+@secondary-tunnel-fill: lighten(@secondary-fill, 5%);
+@tertiary-tunnel-fill: lighten(@tertiary-fill, 5%);
+@residential-tunnel-fill: lighten(@residential-fill, 5%);
+@living-street-tunnel-fill: lighten(@living-street-fill, 3%);
 
 @bus-guideway-fill: #3a5080;
-@bus-guideway-tunnel-fill: darken(desaturate(@bus-guideway-fill, 20%), 8%);
+@bus-guideway-tunnel-fill: lighten(desaturate(@bus-guideway-fill, 20%), 8%);
 
 @motorway-width-z6:               0.4;
 @trunk-width-z6:                  0.4;
