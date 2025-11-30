@@ -1622,7 +1622,7 @@
   [feature = 'place_islet'][zoom >= 11][way_pixels > 3000],
   [feature = 'place_islet'][zoom >= 17] {
     text-name: "[name]";
-    text-fill: #000;
+    text-fill: #cccccc;
     text-size: @landcover-font-size;
     text-wrap-width: @landcover-wrap-width-size;
     text-line-spacing: @landcover-line-spacing-size;
@@ -1658,7 +1658,7 @@
       text-line-spacing: -0.60; // -0.05 em
       text-margin: 8.4; // 0.7 em
       text-fill: @placenames-light;
-      text-halo-fill: white;
+      text-halo-fill: rgba(0,0,0,0.6);
     }
   }
 
@@ -1845,7 +1845,7 @@
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
-    text-fill: #000033;
+    text-fill: #ccccdd;
     text-dy: 12;
     text-face-name: @standard-font;
     text-halo-radius: @standard-halo-radius;
@@ -1862,7 +1862,7 @@
     text-fill: @shop-text;
     text-face-name: @standard-font;
     text-halo-radius: @standard-halo-radius;
-    text-halo-fill: rgba(255, 255, 255, 0.6);
+    text-halo-fill: rgba(0, 0, 0, 0.6);
   }
 
   [feature = 'natural_peak'][zoom >= 13],
@@ -1874,8 +1874,8 @@
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
-    text-fill: darken(@landform-color, 30%);
-    [feature = 'natural_volcano'] { text-fill: #d40000; }
+    text-fill: lighten(@landform-color, 30%);
+    [feature = 'natural_volcano'] { text-fill: #ff5050; }
     [feature = 'mountain_pass'] { text-fill: @transportation-text; }
     text-dy: 7;
     [feature = 'tourism_viewpoint'] { text-dy: 11; }
@@ -1886,7 +1886,7 @@
 
   [feature = 'natural_cape'][zoom >= 14] {
     text-name: "[name]";
-    text-fill: #000;
+    text-fill: #cccccc;
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;

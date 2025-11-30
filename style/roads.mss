@@ -2095,7 +2095,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
         line-join: round;
         line-cap: round;
         #tunnels {
-          line-color: darken(white, 5%);
+          line-color: #151515;
         }
         #bridges {
           [service = 'INT-normal'] {
