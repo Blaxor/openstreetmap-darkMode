@@ -6,12 +6,12 @@
       line/line-width: 1;
       line/line-join: round;
       line/line-cap: round;
-      line/line-color: #808080;
+      line/line-color: #606060;
 
       dash/line-width: 3;
       dash/line-join: round;
       dash/line-cap: round;
-      dash/line-color: black;
+      dash/line-color: #a0a0a0;
       dash/line-dasharray: 0.4,13;
       dash/line-clip: false;
     }
@@ -22,11 +22,11 @@
       line/line-width: 1;
       line/line-join: round;
       line/line-cap: round;
-      line/line-color: #808080;
+      line/line-color: #606060;
 
       dash/line-width: 3.5;
       dash/line-join: round;
-      dash/line-color: #707070;
+      dash/line-color: #505050;
       dash/line-dasharray: 6,25;
       dash/line-clip: false;
     }
@@ -43,11 +43,11 @@
       line/line-width: 1;
       line/line-join: round;
       line/line-cap: round;
-      line/line-color: #808080;
+      line/line-color: #606060;
 
       dash/line-width: 4;
       dash/line-join: round;
-      dash/line-color: black;
+      dash/line-color: #a0a0a0;
       dash/line-dasharray: 1,30;
       dash/line-clip: false;
     }
@@ -105,8 +105,8 @@
         center/line-color: @land-color;
         center/line-join: round;
         [substance = 'water'] { center/line-color: @water-color; }
-        [substance = 'gas'] { center/line-color: #c1c1c1; } // Lch(78,0,0)
-        [substance = 'oil'] { center/line-color: #cfbfa5; } // Lch(78,15,83)
+        [substance = 'gas'] { center/line-color: #505050; } // Dark gray for dark mode
+        [substance = 'oil'] { center/line-color: #4a4030; } // Dark brown for dark mode
       }
       [zoom >= 18] {
         line/line-width: 3;
@@ -143,7 +143,7 @@
   [feature = 'man_made_pipeline'] {
     [zoom >= 17] {
       text-name: "[name]";
-      text-fill: #666666;
+      text-fill: #999999;
       text-size: 10;
       text-dy: 4;
       text-spacing: 900;

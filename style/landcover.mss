@@ -1,74 +1,74 @@
-// --- Parks, woods, other green things ---
+// --- Parks, woods, other green things --- (Dark mode)
 
-@grass: #cdebb0;        // Lch(90,32,128) also grassland, meadow, village_green, garden, allotments
-@scrub: #c8d7ab;        // Lch(84,24,122)
-@forest: #add19e;       // Lch(80,30,135)
-@forest-text: #46673b;  // Lch(40,30,135)
-@park: #c8facc;         // Lch(94,30,145)
-@allotments: #c9e1bf;   // Lch(87,20,135)
-@orchard: #aedfa3; // also vineyard, plant_nursery
-@hedge: @forest;       // Lch(80,30,135)
+@grass: #1a3020;        // Dark green for grass
+@scrub: #1a2a1a;        // Dark scrub
+@forest: #0f2510;       // Dark forest
+@forest-text: #6a9a5a;  // Light text for forest labels
+@park: #152a1a;         // Dark park
+@allotments: #1a2a1a;   // Dark allotments
+@orchard: #152a15;      // Dark orchard, vineyard, plant_nursery
+@hedge: @forest;        // Same as forest
 
-// --- "Base" landuses ---
+// --- "Base" landuses --- (Dark mode)
 
-@built-up-lowzoom: #d0d0d0;
-@built-up-z12: #dddddd;
-@residential: #e0dfdf;      // Lch(89,0,0)
-@residential-line: #b9b9b9; // Lch(75,0,0)
-@retail: #ffd6d1;           // Lch(89,16,30)
-@retail-line: #d99c95;      // Lch(70,25,30)
-@commercial: #f2dad9;       // Lch(89,8.5,25)
-@commercial-line: #d1b2b0;  // Lch(75,12,25)
-@industrial: #ebdbe8;       // Lch(89,9,330) (Also used for railway, wastewater_plant)
-@industrial-line: #c6b3c3;  // Lch(75,11,330) (Also used for railway-line, wastewater_plant-line)
-@farmland: #eef0d5;         // Lch(94,14,112)
-@farmland-line: #c7c9ae;    // Lch(80,14,112)
-@farmyard: #f5dcba;         // Lch(89,20,80)
-@farmyard-line: #d1b48c;    // Lch(75,25,80)
+@built-up-lowzoom: #252525;
+@built-up-z12: #2a2a2a;
+@residential: #222222;      // Dark residential
+@residential-line: #333333; // Slightly lighter line
+@retail: #2a2020;           // Dark retail (reddish tint)
+@retail-line: #3a3030;      // Lighter line
+@commercial: #2a2525;       // Dark commercial
+@commercial-line: #3a3535;  // Lighter line
+@industrial: #252030;       // Dark industrial (purple tint)
+@industrial-line: #353040;  // Lighter line
+@farmland: #202510;         // Dark farmland
+@farmland-line: #303520;    // Lighter line
+@farmyard: #2a2515;         // Dark farmyard
+@farmyard-line: #3a3525;    // Lighter line
 
 // line width used for faint outline of larger landuses, i.e. where outline is not an 
 // intrinsic part of design. Should not appear at lower zoom levels than typical barriers
 // and needs to be sufficiently narrow that it does not interfere with barrier render.
 @landuse-faint-outline-width: 0.5; 
 
-// --- Transport ----
+// --- Transport ---- (Dark mode)
 
-@transportation-area: #e9e7e2;
-@apron: #dadae0;
-@garages: #dfddce;
-@parking: #eeeeee;
-@parking-outline: saturate(darken(@parking, 40%), 20%);
+@transportation-area: #1a1a1a;
+@apron: #1f1f25;
+@garages: #252520;
+@parking: #222222;
+@parking-outline: lighten(@parking, 20%);
 @railway: @industrial;
 @railway-line: @industrial-line;
-@rest_area: #efc8c8; // also services
+@rest_area: #2a2020; // also services
 
-// --- Other ----
+// --- Other ---- (Dark mode)
 
-@bare_ground: #eee5dc;
-@campsite: #def6c0; // also caravan_site, picnic_site
-@cemetery: #aacbaf; // also grave_yard
-@construction: #c7c7b4; // also brownfield
-@heath: #d6d99f;
-@mud: rgba(203,177,154,0.3); // produces #e6dcd1 over @land
-@place_of_worship: #d0d0d0; // also landuse_religious
-@place_of_worship_outline: darken(@place_of_worship, 30%);
-@leisure: lighten(@park, 5%);
-@power: darken(@industrial, 5%);
-@power-line: darken(@industrial-line, 5%);
-@sand: #f5e9c6;
-@societal_amenities: #ffffe5;   // Lch(99,13,109)
-@tourism: #660033;
-@quarry: #c5c3c3;
-@military: #f55;
-@beach: #fff1ba;
+@bare_ground: #252015;
+@campsite: #152010; // also caravan_site, picnic_site
+@cemetery: #1a2a1a; // also grave_yard
+@construction: #2a2a20; // also brownfield
+@heath: #252510;
+@mud: rgba(80,60,40,0.3); // produces dark mud color over @land
+@place_of_worship: #2a2a2a; // also landuse_religious
+@place_of_worship_outline: lighten(@place_of_worship, 20%);
+@leisure: darken(@park, 5%);
+@power: lighten(@industrial, 5%);
+@power-line: lighten(@industrial-line, 5%);
+@sand: #2a2515;
+@societal_amenities: #202015;   // Dark societal amenities
+@tourism: #6a2040;
+@quarry: #2a2a2a;
+@military: #803030;
+@beach: #2a2515;
 @wastewater_plant: @industrial;
 @wastewater_plant-line: @industrial-line;
 @water_works: @industrial;
 @water_works-line: @industrial-line;
 
-// --- Sports ---
+// --- Sports --- (Dark mode)
 
-@pitch: #88e0be;           // Lch(83,35,166) also track
+@pitch: #1a3020;           // Dark pitch
 @track: @pitch;
 @stadium: @leisure; // also sports_centre
 @golf_course: @campsite;
